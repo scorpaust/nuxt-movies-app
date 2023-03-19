@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    runtimeConfig: {
+        omdbKey: ''
+    },
     modules: [
         ["@pinia/nuxt", {
             autoImports: ["defineStore", "acceptHMRUpdate"]
@@ -11,7 +14,4 @@ export default defineNuxtConfig({
     alias: {
         pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs"
     },
-    runtimeConfig: {
-        omdbKey: ''
-    }
 })
