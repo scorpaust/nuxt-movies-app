@@ -1,9 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     runtimeConfig: {
-        public: {
-            omdbKey: 'bac43bed'
-        }
+        omdbKey: 'bac43bed'
     },
     modules: [
         ["@pinia/nuxt", {
