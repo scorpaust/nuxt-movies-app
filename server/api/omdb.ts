@@ -6,8 +6,6 @@ export default defineEventHandler(async (event): Promise<any> => {
       method: 'get'
     })
 
-    return {
-      data
-     } 
+    return data
   })
   
