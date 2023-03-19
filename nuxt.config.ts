@@ -1,7 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     runtimeConfig: {
-        omdbKey: process.env.NUXT_OMDB_KEY
+        public: {
+            omdbKey: process.env.NUXT_OMDB_KEY
+        }
     },
     modules: [
         ["@pinia/nuxt", {

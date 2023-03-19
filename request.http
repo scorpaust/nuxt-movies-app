@@ -8,3 +8,8 @@ POST http://localhost:3000/api/helloWorld
     "framework": "Nuxt",
     "name": "Dinis"
 }
+
+###
+
+GET https://localhost:3000/api/omdb?search=batman
+
