@@ -3,7 +3,7 @@
   const query = ref("batman");
   const movies: any = ref([]);
   async function search() {
-    const {Search}: any = await $fetch(`/api/omdb`, {
+    const {Search}: any = await useFetch(`/api/omdb`, {
       method: 'get'
     })
     movies.value = Search;
