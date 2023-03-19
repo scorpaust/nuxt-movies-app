@@ -1,7 +1,7 @@
 <script setup>
     const config = useRuntimeConfig();
     const route = useRoute();
-    const { data, error } = await useFetch(`https://www.omdbapi.com/?i=${route.params.id}&apikey=${config.omdbKey}`, {
+    const { data, error } = await useFetch(`https://www.omdbapi.com/?i=${route.params.id}&apikey=${config.public.omdbKey}`, {
         pick: ["Plot", "Title", "Poster", "Error"],
         key: `/movies/${route.params.id}`,
     });
