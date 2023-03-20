@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     runtimeConfig: {
 
-        omdbKey: ''
+        omdbKey: 'bac43bed'
 
     },
     modules: [
