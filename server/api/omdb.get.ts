@@ -1,9 +1,9 @@
 export default defineEventHandler(async (event) => {
 
-    const Search: Promise<any> = await $fetch<Promise<any>>(`https://www.omdbapi.com/?i=tt3896198&apikey=bac43bed&s=batman`)
+    const { query } = getQuery(event);
 
-    return {
-      Search
-    }
+    const Search: Promise<any> = await $fetch<Promise<any>>(`https://www.omdbapi.com/?apikey=bac43bed&s=${query}`)
+
+    return Search;
   })
   
